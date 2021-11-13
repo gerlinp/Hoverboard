@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicsand&family=Anton&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #111;
+  font-family: 'Quicksand', cursive;
+  background-color: #111;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -12,8 +16,12 @@ body {
   margin: 0;
 }
 
-.container {
-  display: flex;
+h1 {
+  color: green;
+}
+
+#container {
+  display: flex; 
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -21,14 +29,20 @@ body {
 }
 
 .square {
-  background: #1d1d1d;
+  background-color: #1d1d1d;
   box-shadow: 0 0 2px #000;
   height: 16px;
   width: 16px;
   margin: 2px;
-  transition: 2s ease;
+  transition: 3s ease;
 }
 
 .square:hover {
   transition-duration: 0s;
+}
+
+.test {
+  background: white;
+  height: 20px;
+  width: 20px;
 }
